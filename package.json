@@ -1,0 +1,22 @@
+{
+  "name": "spite-malice-db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "default-users.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taffyb/Spite-Malice-db.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taffyb/Spite-Malice-db/issues"
+  },
+  "homepage": "https://github.com/taffyb/Spite-Malice-db#readme",
+  "dependencies": {
+    "aws-sdk": "^2.727.1"
+  }
+}
