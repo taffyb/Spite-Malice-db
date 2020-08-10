@@ -1,7 +1,7 @@
 const AWS = require('aws-sdk');
 AWS.config.update({region:"eu-west-2"});
 const docClient = new AWS.DynamoDB.DocumentClient();
-
+const timestamp =Date.now();
 let params = {
     RequestItems: {
         "sm_config":[
@@ -29,12 +29,12 @@ let params = {
             }
         }
         ],
-        "sm_users": [
+        "sm_players": [
         {
             PutRequest: {
                 Item: {
-                    "create-timestamp": 1525013088,
-                    "guid": "123456",
+                    "created": timestamp,
+                    "uuid": "123456",
                     "name": "Taffy",
                     "profile": {
                         "animation": {
@@ -58,8 +58,8 @@ let params = {
         {
           PutRequest: {
             Item: {
-                "create-timestamp": 1525013088,
-                "guid": "987654",
+                "created": timestamp,
+                "uuid": "987654",
                 "name": "Suzannah",
                 "profile": {
                   "animation": {
@@ -83,8 +83,8 @@ let params = {
         {
             PutRequest: {
                 Item: {
-                    "create-timestamp": 1525013088,
-                    "guid": "111111",
+                    "created": timestamp,
+                    "uuid": "111111",
                     "name": "Player 1"
                 }
             }
@@ -92,8 +92,8 @@ let params = {
         {
             PutRequest: {
                 Item: {
-                    "create-timestamp": 1525013088,
-                    "guid": "222222",
+                    "created": timestamp,
+                    "uuid": "222222",
                     "name": "Player 2"
                 }
             }
